@@ -70,7 +70,17 @@ const TopArticles = async () => {
 
   return (
 
-    <div className='max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8'>
+    <div className='max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8'>
+
+
+       <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              Featured Articles
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              Discover our most popular and trending content
+            </p>
+          </div>
         <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
 
         {articles.slice(0,3).map((article:any)=>(

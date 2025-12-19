@@ -15,7 +15,7 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Left Section - Logo & Desktop Navigation */}
           <div className="flex items-center gap-8">
@@ -29,7 +29,10 @@ export function Navbar() {
               </span>
             </Link>
 
-            {/* Desktop Navigation */}
+           
+          </div>
+
+           {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-4">
               <Link
                 href="/articles"
@@ -56,7 +59,7 @@ export function Navbar() {
                 Dashboard
               </Link>
             </div>
-          </div>
+            
 
           {/* Right Section - Search & Actions */}
           <div className="flex items-center gap-4">
@@ -67,6 +70,8 @@ export function Navbar() {
 
             {/* Theme Toggle */}
             <ModeToggle />
+
+
 
            
 
@@ -85,6 +90,25 @@ export function Navbar() {
               </div>
             </SignedOut> */}
 
+             <div className="hidden lg:flex justify-center gap-4 ">
+      <Button
+        asChild
+      >
+        <Link href="/auth/login">Login</Link>
+      </Button>
+
+      <Button
+        asChild
+        
+      >
+        <Link href="/auth/signup">Signup</Link>
+      </Button>
+    </div>
+
+     
+
+    
+
             {/* Mobile Menu Button */}
             <Button
               variant="ghost"
@@ -100,6 +124,7 @@ export function Navbar() {
             </Button>
           </div>
         </div>
+
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (

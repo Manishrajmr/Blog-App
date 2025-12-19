@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Gradient overlay */}
       <div className="absolute inset-0" />
 
-      <div className="container relative max-w-[1400px] mx-auto  flex h-full flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-24 md:flex-row md:py-32">
+      <div className="container relative max-w-7xl  mx-auto  flex h-full flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-24 md:flex-row md:py-32">
         {/* Content */}
         <div className="flex-1 space-y-8 text-center md:text-left">
           <h1 className="text-4xl text-foreground font-bold tracking-tight  sm:text-5xl md:text-6xl">
