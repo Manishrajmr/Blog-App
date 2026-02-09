@@ -53,7 +53,7 @@ export function Navbar() {
                 About
               </Link>
               <Link
-                href="/dashboard"
+                href="/dash"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 Dashboard
